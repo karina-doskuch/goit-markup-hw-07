@@ -1,4 +1,4 @@
-backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,9 +9,7 @@ backdrop {
     transition: opacity 250ms, visibility 250ms;  
 }
 
-
-
-.modal {
+.backdrop-modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,9 +20,21 @@ backdrop {
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
+
+    padding: 40px;
 }
 
-.backdrop__modal-close {
+.backdrop-modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-b);
+    margin-bottom: 12px;
+}
+
+.backdrop-modal__close {
     top: 8px;
     right: 8px;
     position: absolute;
@@ -39,20 +49,11 @@ backdrop {
     cursor: pointer;
 }
 
-.backdrop__modal-svg {
+.backdrop-modal__svg {
     fill: currentColor;
 }
 
-.backdrop__modal-svg:hover {
+.backdrop-modal__svg:hover {
    fill: #2196F3;
 }
 
-.backdrop__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-b);
-    margin-bottom: 12px;
-}

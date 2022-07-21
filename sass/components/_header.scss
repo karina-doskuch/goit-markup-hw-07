@@ -1,8 +1,60 @@
-.header__container {
+.header-container {
     border-bottom: 1px solid #ECECEC;  
 }
 
-.logo__accent {
+.header-container__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container__logo {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-weight: 700;                         
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--color-b);
+    letter-spacing: var(--letter-spacing);
+    text-decoration: none;
+    margin-right: 93px;    
+}
+
+.header-container__accent {
+    color: var(--main-bg-color);
+}
+
+.header-nav {
+    display: flex;
+   justify-content: center;  
+}
+
+.header-nav__item {
+    font-weight: 400;
+    line-height: var(--line-height);
+    letter-spacing: 0.02em;
+    color: var(--color-b);
+    margin-right: 50px;
+}
+
+.link:hover {
+    color: var(--main-bg-color);   
+}
+
+.header-nav__link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--line-height);
+    letter-spacing: 0.02em;
+    color: var(--color-b);
+    text-decoration: none; 
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav__link:focus {
     color: var(--main-bg-color);
 }
 
@@ -25,50 +77,43 @@
     border-radius: 2px;
 }
 
-.auth__nav {
+.auth-nav {
     display: flex;
     margin-left: auto;  
 }
 
-.site__nav-item {
-    font-weight: 400;
+.auth-nav__item {
+    margin-left: 30px;
+}
+
+.auth-nav__item:last-child {
+    margin-right: 0;
+}
+
+.auth-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-style: normal;
+    font-weight: 500;
     line-height: var(--line-height);
     letter-spacing: 0.02em;
-    color: var(--color-b);
-    margin-right: 50px;
+    color: var(--color-grey);
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.auth-nav__link:hover {
+    color: var(--main-bg-color);
+    cursor: pointer;
 }
 
 .item:nth-child(3n) {
     margin-right: 0;
 } 
-
-.auth__nav-item {
-    margin-left: 30px;
-}
-
-.auth__nav-item:last-child {
-    margin-right: 0;
-}
-
-.auth__nav-address:hover {
-    color: var(--main-bg-color);
-    cursor: pointer;
-}
  
-.icon-email, .icon-tel {
-     fill: currentColor;
-} 
 
-.icon-email:hover {
-    cursor: pointer;
-    color: var(--main-bg-color);
-}
 
-.auth__nav-address {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}

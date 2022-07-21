@@ -2,7 +2,7 @@
     padding-top: 0;
 }
 
-.section__heading {
+.section-doing__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -14,17 +14,23 @@
     padding-top: 0;
 }
 
-.list-container__item {
+.section-doing__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.section-doing__item {
     position: relative;
     margin-right: 30px;
 }
 
-.list-container__item:nth-child(3n) {
+.lsection-doing__item:nth-child(3n) {
     margin-right: 0;
 } 
 
 
-.list-container__item::before {
+.section-doing__item::before {
     display: inline-block;
     position: absolute;
     content: "";
@@ -37,7 +43,7 @@
 }
 
 
-.list-container__text {
+.section-doing__text {
     position: absolute;
     left: 0;
     bottom: 0;

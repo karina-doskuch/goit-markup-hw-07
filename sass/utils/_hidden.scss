@@ -1,4 +1,4 @@
-.visually__hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -9,7 +9,7 @@
     clip: rect(0 0 0);
 }
 
-.backdrop.is__hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

@@ -11,7 +11,11 @@
   margin-right: 30px;
 }
 
-.descritpion__list-block {
+.description__list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.description__list-block {
   background: #F5F4FA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,8 +29,12 @@
   height: 120px;
 }
 
-.description__list-item:nth-child(4n) {
-  margin-right: 0;
+.description__title {
+  margin-top: 30px;
+  line-height: var(--line-height);
+  text-transform: uppercase;
+  color: var(--color-b);
+  font-size: var(--font-s);
 }
 
 .description__text {
